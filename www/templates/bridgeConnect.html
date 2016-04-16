@@ -1,0 +1,21 @@
+<!--my bridge ip http://192.168.1.137/-->
+<!--user has to manually type in ip.. it'll remember next time in DB based on username? -->
+<ion-view view-title="">
+    <ion-content>
+<!--ng-controller="bridgeController as bC-->
+    <div id="bridgeConnect" >
+
+        <input id='bridgeIP' type='text' placeholder="enter your bridge ip" ng-model="ip" > <br><br>
+        <input id='username' type="text" placeholder="please enter your username" ng-model="username">
+
+        <p>{{usernameMessage}}</p>
+        <button type="button" ng-click="getAuthUser(username)">click</button>
+        <p>Message from Bridge = {{apiMessage}}</p>
+        {{authUsername}}
+    </div>
+
+    </ion-content>
+</ion-view>
+
+
+

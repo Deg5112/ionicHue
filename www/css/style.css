@@ -1,0 +1,19 @@
+/* Empty. Add your own CSS if you like */
+
+.lights {
+    border: 1px solid black;
+    width: 15%;
+    margin: 1% 0;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #FFF6A0;
+}
+
+
+#lightsList {
+    list-style: none;
+}
+
+.lights:hover {
+    cursor: pointer;
+}

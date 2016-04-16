@@ -1,0 +1,23 @@
+<ion-view view-title="">
+    <ion-content>
+<ul id="lightsList">
+    <li class='lights' ng-repeat="i in lights" ng-click="toggle($index + 1)">{{i.name}}</li>
+</ul>
+{{username}}
+<button type="button" ng-click="toggleAll()">toggle all</button>
+<button type="button" ng-click="showLights()">Get All</button>
+
+
+<span class="colorpicker" style="display: inline-block; vertical-align: top;" ng-click="lC.getRGB()"></span>
+    </ion-content>
+</ion-view>
+
+<script>
+    $(function() {
+        $('.colorpicker').colorpicker();
+    });
+</script>
+
+
+
+
